@@ -13,6 +13,13 @@ People may mean LoRaWAN when they talk about LoRa. But in reality, they are diff
 **In simpler terms, LoRa is the PHY layer while LoRaWAN is the data link layer. They come together to comprise the LPWA networking technology stack.**   
 
 
+### LoRa/LoRaWAN Gateway
+- Single Channel Gateway   
+A single-channel gateway is a LoRa device that acts as a gateway by forwarding LoRa packets to the network. As it's usually built using a SX1272/SX1276 instead of SX1301/SX1257, it's a lot cheaper than a full gateway, making it a favorite choice for people to start with LoRaWAN. However, single-channel gateways are extremely limited compared to a real gateway. Single-channel gateways often lead to undesired design choices for solutions that you might build and can hurt the LoRaWAN server.
+
+- Multichannel Gateway   
+Multichannel LoRaWAN gateway is the real LoRa Alliance compliance gateway which is powered by SX1301 or others. Single-channel gateways can only receive on one channel and one spreading factor at the same time, whereas a full gateway can receive on eight channels (some even ten) and six spreading factors at the same time.
+8-Channel example : http://vctec.co.kr/product/8%EC%B1%84%EB%84%90-lora-%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4-hat-%ED%82%A4%ED%8A%B8-sx1301-8-channel-lora-gateway-hat-with-lora-and-/15569/    
 ### Frame Structure   
 http://www.techplayon.com/lora-long-range-network-architecture-protocol-architecture-and-frame-formats/   
 
