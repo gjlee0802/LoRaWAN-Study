@@ -20,6 +20,10 @@ A single-channel gateway is a LoRa device that acts as a gateway by forwarding L
 - Multichannel Gateway   
 Multichannel LoRaWAN gateway is the real LoRa Alliance compliance gateway which is powered by SX1301 or others. Single-channel gateways can only receive on one channel and one spreading factor at the same time, whereas a full gateway can receive on eight channels (some even ten) and six spreading factors at the same time.
 8-Channel example : http://vctec.co.kr/product/8%EC%B1%84%EB%84%90-lora-%EA%B2%8C%EC%9D%B4%ED%8A%B8%EC%9B%A8%EC%9D%B4-hat-%ED%82%A4%ED%8A%B8-sx1301-8-channel-lora-gateway-hat-with-lora-and-/15569/    
+
+### What is Spreading Factor(SF)?
+The spreading factor (SF) impacts the communication performance of LoRa, which uses an SF between 7 and 12. A larger SF increases the time on air, which increases energy consumption, reduces the data rate, and improves communication range. For successful communication, as determined by the SF, the modulation method must correspond between a transmitter and a receiver for a given packet.
+
 ### Frame Structure   
 http://www.techplayon.com/lora-long-range-network-architecture-protocol-architecture-and-frame-formats/   
 
