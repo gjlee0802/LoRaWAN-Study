@@ -27,6 +27,31 @@ The spreading factor (SF) impacts the communication performance of LoRa, which u
 ### LoRaWAN Device Classes
 https://www.thethingsnetwork.org/docs/lorawan/classes.html
 
+### Receive Windows
+- Following each uplink transmission, the end-device SHALL open one or two receive windows
+377 (RX1 and RX2); if no packet destined for the end-device is received in RX1, it SHALL open
+378 RX2. The receive windows start times are defined using the end of the transmission as a
+379 reference, see follow Figure.   
+번역 정리:   
+- RX1에 최종 장치로 향하는 패킷이 수신되지 않으면 RX2를 열어야 한다.    
+수신 윈도우 시작 시간은 전송 끝을 기준으로 정의된다(그림 참조).   
+![End-device-receive-slot-timing](https://user-images.githubusercontent.com/49184890/106476311-45bbea00-64ea-11eb-9a91-6caef31ece09.PNG)
+
+### Receiver activity during receive windows
+If a preamble is detected during one of the receive windows, the radio receiver SHOULD stay active until the downlink frame is demodulated. If a frame was detected and subsequently demodulated during the first receive window, and the frame was intended for this end-device after address and MIC (message integrity code) checks, the end-device SHALL NOT open the second receive window.   
+
+### First receive-window channel, data rate, and start
+첫 번째 수신 창 RX1은 uplink 주파수의 function인 주파수와 uplink data rate의 function인 data rate를 사용한다.   
+RX1은 업링크 변조가 종료된 후 'RECEIVE_DELAY1' 초 이내에 개방되어야 한다.   
+uplink와 RX1 data rates 간의 관계는 지역별로 다르며 자세한 것은 RP002 문서를 참고한다.   
+
+### Second receive window channel, data rate, and start
+두 번째 수신 창 RX2는 열린 경우 **고정으로** 구성 가능한 주파수와 data rate를 사용하며, 업링크 변조가 끝난 후 'RECEIVE_DELAY2' 초 이내에 개방되어야 한다.   
+주파수 및 데이터 속도는 MAC 명령으로 수정할 수 있다. 기본 주파수와 datarate는 지역별로 다르며 자세한 것은 RP002 문서를 참고한다.   
+
+### Receive window duration
+수신 창의 지속 시간은 적어도 uplink 변조가 끝난 후 RECEIVE_DELAY1 또는 RECEIVE_DELAY2에서 시작하는 **downlink preamble을 감지하기 위해 end-device의 무선 송수신기에 필요한 시간**이어야 한다.
+
 ### Frame Structure   
 http://www.techplayon.com/lora-long-range-network-architecture-protocol-architecture-and-frame-formats/   
 
