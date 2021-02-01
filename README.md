@@ -24,6 +24,9 @@ Multichannel LoRaWAN gateway is the real LoRa Alliance compliance gateway which 
 ### What is Spreading Factor(SF)?
 The spreading factor (SF) impacts the communication performance of LoRa, which uses an SF between 7 and 12. A larger SF increases the time on air, which increases energy consumption, reduces the data rate, and improves communication range. For successful communication, as determined by the SF, the modulation method must correspond between a transmitter and a receiver for a given packet.
 
+### LoRaWAN Device Classes
+https://www.thethingsnetwork.org/docs/lorawan/classes.html
+
 ### Frame Structure   
 http://www.techplayon.com/lora-long-range-network-architecture-protocol-architecture-and-frame-formats/   
 
@@ -36,5 +39,6 @@ http://www.techplayon.com/lora-device-activation-call-flow-join-procedure-using-
 ### LoRaWAN Specification - LoRa Alliance
 https://lora-alliance.org/wp-content/uploads/2020/11/LoRaWAN-1.0.4-Specification-Package_0.zip
 
-### LoRaWAN Classes
-https://www.thethingsnetwork.org/docs/lorawan/classes.html
+### LoRaWAN Regional Parameters
+https://lora-alliance.org/wp-content/uploads/2020/11/RP_2-1.0.2.pdf
+
