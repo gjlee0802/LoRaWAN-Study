@@ -73,6 +73,12 @@ A MAC command consists of a command identifier (CID) of 1 octet followed by a po
 
 ### OTAA & ABP communication   
 http://www.techplayon.com/lora-device-activation-call-flow-join-procedure-using-otaa-and-abp/   
+- OTAA   
+![LoRa-Call4](https://user-images.githubusercontent.com/49184890/107114718-6b127480-68ab-11eb-93df-6c66e71c17cc.png)
+- Join Request Frame   
+![JR_FRAME](https://user-images.githubusercontent.com/49184890/107114702-52a25a00-68ab-11eb-8fea-a5997b695371.PNG)
+- Join Accept Frame   
+![JA_FRAME](https://user-images.githubusercontent.com/49184890/107114710-5f26b280-68ab-11eb-95a8-66ec408f943a.PNG)
 
 ### LoRaWAN Specification - LoRa Alliance
 https://lora-alliance.org/wp-content/uploads/2020/11/LoRaWAN-1.0.4-Specification-Package_0.zip
