@@ -58,6 +58,13 @@ http://www.techplayon.com/lora-long-range-network-architecture-protocol-architec
 ### MAC Layer   
 https://m.blog.naver.com/PostView.nhn?blogId=tnseo444&logNo=221140719936&proxyReferer=https:%2F%2Fwww.google.co.kr%2F   
 
+### MAC Commands
+A MAC command consists of a command identifier (CID) of 1 octet followed by a possibly empty command-specific sequence of octets.   
+![CID](https://user-images.githubusercontent.com/49184890/107111186-3d203680-6891-11eb-8001-eca5d22d91bb.PNG)
+
+- Link Check Commands(LinkCheckReq, LinkCheckAns)
+![link_check](https://user-images.githubusercontent.com/49184890/107111052-1dd4d980-6890-11eb-8c11-289f5d49f35d.PNG)
+
 ### OTAA & ABP communication   
 http://www.techplayon.com/lora-device-activation-call-flow-join-procedure-using-otaa-and-abp/   
 
