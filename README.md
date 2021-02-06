@@ -28,12 +28,11 @@ The spreading factor (SF) impacts the communication performance of LoRa, which u
 https://www.thethingsnetwork.org/docs/lorawan/classes.html
 
 ### Receive Windows
-- Following each uplink transmission, the end-device SHALL open one or two receive windows
-377 (RX1 and RX2); if no packet destined for the end-device is received in RX1, it SHALL open
-378 RX2. The receive windows start times are defined using the end of the transmission as a
-379 reference, see follow Figure.   
-번역 정리:   
-- RX1에 최종 장치로 향하는 패킷이 수신되지 않으면 RX2를 열어야 한다.    
+- Following each uplink transmission, the end-device SHALL open one or two receive windows (RX1 and RX2);   
+if no packet destined for the end-device is received in RX1, it SHALL open RX2.    
+The receive windows start times are defined using the end of the transmission as a reference, see follow Figure.   
+
+- 번역: RX1에 최종 장치로 향하는 패킷이 수신되지 않으면 RX2를 열어야 한다.    
 수신 윈도우 시작 시간은 전송 끝을 기준으로 정의된다(그림 참조).   
 ![End-device-receive-slot-timing](https://user-images.githubusercontent.com/49184890/106476311-45bbea00-64ea-11eb-9a91-6caef31ece09.PNG)
 
@@ -59,10 +58,17 @@ http://www.techplayon.com/lora-long-range-network-architecture-protocol-architec
 https://m.blog.naver.com/PostView.nhn?blogId=tnseo444&logNo=221140719936&proxyReferer=https:%2F%2Fwww.google.co.kr%2F   
 
 ### MAC Commands
+If present, **an FPort value of 0** indicates that the **FRMPayload contains only MAC commands**.   
+A single data frame MAY contain any sequence of MAC commands, either piggybacked in the FOpts field or,    
+when sent as a separate data frame, in the FRMPayload field with the FPort field set to 0.   
+
+참고: 콘텐츠를 암호화해야 하는 MAC 명령은 별도의 데이터 프레임의 FRM 페이로드로 전송되어야 한다.   
+
+- CID   
 A MAC command consists of a command identifier (CID) of 1 octet followed by a possibly empty command-specific sequence of octets.   
 ![CID](https://user-images.githubusercontent.com/49184890/107111186-3d203680-6891-11eb-8001-eca5d22d91bb.PNG)
 
-- Link Check Commands(LinkCheckReq, LinkCheckAns)
+- Link Check Commands(LinkCheckReq, LinkCheckAns)   
 ![link_check](https://user-images.githubusercontent.com/49184890/107111052-1dd4d980-6890-11eb-8c11-289f5d49f35d.PNG)
 
 ### OTAA & ABP communication   
