@@ -79,16 +79,16 @@ http://www.techplayon.com/lora-device-activation-call-flow-join-procedure-using-
 ![JR_FRAME](https://user-images.githubusercontent.com/49184890/107114702-52a25a00-68ab-11eb-8fea-a5997b695371.PNG)
 - Join Accept Frame   
 ![JA_FRAME](https://user-images.githubusercontent.com/49184890/107114710-5f26b280-68ab-11eb-95a8-66ec408f943a.PNG)
-  - JoinNonce field
+  - JoinNonce field   
   Please refer to the following documents to know additional behavior for the 'JoinNonce(AppNonce)' value in the Join Server to prevent synchronization issues related to the LoRaWAN Join Procedure.   
   https://lora-alliance.org/wp-content/uploads/2020/11/lorawan-1.0.x-join-synch-issues-remedies-v1.0.0.pdf   
 
-  - NetID field
+  - NetID field   
   Please refer to the following documents for details.(p50)   
   https://lora-alliance.org/wp-content/uploads/2020/11/TS002-1.1.0_LoRaWAN_Backend_Interfaces.pdf
   ![스크린샷, 2021-02-07 16-45-50](https://user-images.githubusercontent.com/49184890/107140261-3dd5cd00-6964-11eb-9ab5-8a7900bba363.png)
 
-  - DLSettings field  
+  - DLSettings field    
   ![스크린샷, 2021-02-07 16-04-02](https://user-images.githubusercontent.com/49184890/107139400-36abc080-695e-11eb-9fc3-dc4bbb436672.png)   
 
 
