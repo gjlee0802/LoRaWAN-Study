@@ -91,6 +91,12 @@ http://www.techplayon.com/lora-device-activation-call-flow-join-procedure-using-
   - DLSettings field    
   ![스크린샷, 2021-02-07 16-04-02](https://user-images.githubusercontent.com/49184890/107139400-36abc080-695e-11eb-9fc3-dc4bbb436672.png)   
 
+### Invert IQ   
+Basically Gateway **send message with invertIQ enable** and **receive with invertIQ disabled.**   
+Nodes **sends message with invertIQ disabled** and **receive message with invertIQ enable.**   
+![31894907-045ede62-b810-11e7-91e4-9366e46f95aa](https://user-images.githubusercontent.com/49184890/107609634-de88fd00-6c82-11eb-8d17-0a4e37ccb015.png)   
+- for Downlink: invertIQ enable   
+- for Uplink: invertIQ disable   
 
 ### LoRaWAN Specification - LoRa Alliance
 https://lora-alliance.org/wp-content/uploads/2020/11/LoRaWAN-1.0.4-Specification-Package_0.zip
