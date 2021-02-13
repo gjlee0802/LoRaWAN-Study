@@ -52,6 +52,8 @@ uplink와 RX1 data rates 간의 관계는 지역별로 다르며 자세한 것�
 수신 창의 지속 시간은 적어도 uplink 변조가 끝난 후 RECEIVE_DELAY1 또는 RECEIVE_DELAY2에서 시작하는 **downlink preamble을 감지하기 위해 end-device의 무선 송수신기에 필요한 시간**이어야 한다.
 
 ### Frame Structure   
+![LoRaWAN_Frame_Struct](https://user-images.githubusercontent.com/49184890/107856759-c1645200-6e6d-11eb-9b34-3618eb38a039.jpg)
+Please refer to the following link.   
 http://www.techplayon.com/lora-long-range-network-architecture-protocol-architecture-and-frame-formats/   
 
 ### MAC Layer   
